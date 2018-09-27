@@ -1,0 +1,86 @@
+/* <system section="theme" selected="reach"> */
+@import "/css/theme/reach/reach.css";
+/* </system> */
+
+/* <system section="background" selected="blur-01"> */
+body{ background-image: url('/images/theme/backgrounds/2014/blur-01.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-position: center top; background-size: cover; }
+/* </system> */
+
+.entry-content pre.code {
+    background-color: #073642;
+    color: #93a1a1;
+}
+.synSpecial { color: #dc322f }
+.synType { color: #b58900 }
+.synComment { color: #657b83}
+.synPreProc { color: #cb4b16 }
+.synIdentifier { color: #268bd2 }
+.synConstant { color: #2aa198 }
+.synStatement { color: #859900 }
+
+.entry-content h3 {
+  position: relative;
+  color: #fff;
+  padding: 6px 10px;
+  z-index: 2;
+}
+.entry-content h3::before,
+.entry-content h3::after {
+  position: absolute;
+  width: 98%;
+  height: 100%;
+  content: '';
+}
+.entry-content h3::before{
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  background-color: #1056a2;
+}
+.entry-content h3::after{
+  top: 4px;
+  left: 4px;
+  z-index: -2;
+  background-color: #111;
+}
+
+
+.entry-content h4 {
+  padding: 3px 8px;
+  color: #111;
+  background-color: #f0f0f0;
+  border-left: 8px solid #1056a2;
+  border-bottom: 1px solid #1056a2;
+}
+
+
+.entry-content h5 {
+  padding: 3px 8px;
+  color: #111;
+  background-color: #f0f0f0;
+  border-left: 8px solid #04B45F;
+  border-bottom: 1px solid #1056a2;
+}
+
+/*続きを読むボタン*/
+.entry-see-more {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-weight:bold;
+  color:#333;
+  border: 2px solid #333;
+  border-radius: 3px;
+  transition: .01s
+}
+
+
+/*標準のフォントの色の指定*/
+body {
+background-color: #ffffff;
+color: #000000;
+}
+
